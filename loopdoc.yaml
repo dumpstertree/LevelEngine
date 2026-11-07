@@ -44,5 +44,5 @@ Static:
         - field: "num_rooms"
           type: "CurioCore:Vector2" 
     outputs:
-        - field: "level_data"
-          type: "LevelData" 
+        - field: "map"
+          type: "Map" 
