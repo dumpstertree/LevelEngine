@@ -31,7 +31,7 @@ Types:
           type: "int" 
 Ledger: []
 Static: 
-    name: "tile_type_for_location" 
+  - name: "tile_type_for_location" 
     inputs:
         - field: "map"
           type: "Map" 
@@ -40,7 +40,7 @@ Static:
     outputs:
         - field: "tile_type"
           type: "int" 
-    name: "generate_level_data"
+  - name: "generate_level_data"
     inputs:
         - field: "min_map_size"
           type: "CurioCore:Vector2"
