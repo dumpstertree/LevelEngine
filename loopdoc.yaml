@@ -1,0 +1,31 @@
+Requires: 
+  - id: "core"
+  - location: "https://github.com/dumpstertree/curio-engine"
+Types:
+    - TileData:
+        - field: "tile_type"
+          type: "int" 
+    - LevelData:
+        - field: "tiles"
+          type: "TileData[]"
+        - field: "map_width"
+          type: "int"
+        - field: "map_height"
+          type: "int" 
+Ledger: []
+Static: 
+    name: "generate_level_data"
+    inputs:
+        - field: "min_map_size"
+          type: "core:vector2"
+        - field: "max_map_size"
+          type: "core:vector2" 
+        - field: "min_room_size"
+          type: "core:vector2"
+        - field: "max_room_size"
+          type: "core:vector2" 
+        - field: "num_rooms"
+          type: "core:vector2" 
+    outputs:
+        - field: "level_data"
+          type: "LevelData" 
