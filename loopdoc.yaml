@@ -1,3 +1,4 @@
+Name: LevelEngine
 Types:
     - Config:
       - field: "tile_type"
