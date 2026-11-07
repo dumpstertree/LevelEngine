@@ -2,15 +2,34 @@ Requires:
   - id: "core"
   - location: "https://github.com/dumpstertree/curio-engine"
 Types:
-    - TileData:
-        - field: "tile_type"
-          type: "int" 
-    - LevelData:
+    - Config:
+      - field: "tile_type"
+        type: "int"
+      - field: "num_rooms"
+        type: "int"
+      - field: "min_width"
+        type: "int"
+      - field: "max_width" 
+        type: "int"
+      - field: "min_height" 
+        type: "int"
+      - field: "max_height" 
+        type: "int"
+      - field: "min_room_size" 
+        type: "int"
+      - field: "max_room_size" 
+        type: "int"
+      - field: "seed" 
+        type: "int"
+    - Tile:
+      - field: "tile_type"
+        type: "int" 
+    - Map:
         - field: "tiles"
           type: "TileData[]"
-        - field: "map_width"
+        - field: "width"
           type: "int"
-        - field: "map_height"
+        - field: "height"
           type: "int" 
 Ledger: []
 Static: 
