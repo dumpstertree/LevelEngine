@@ -24,7 +24,7 @@ Types:
         type: "int" 
     - Map:
         - field: "tiles"
-          type: "TileData[]"
+          type: "Tile[]"
         - field: "width"
           type: "int"
         - field: "height"
